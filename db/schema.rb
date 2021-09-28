@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 2021_09_28_004639) do
   end
 
   create_table "vehicles", force: :cascade do |t|
-    t.string "type"
+    t.string "v_type"
     t.integer "capacity"
     t.bigint "transport_company_id", null: false
     t.datetime "created_at", precision: 6, null: false
