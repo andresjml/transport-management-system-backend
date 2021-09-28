@@ -1,4 +1,4 @@
 class VehicleSerializer < ActiveModel::Serializer
-  attributes :id, :type, :capacity
+  attributes :id, :v_type, :capacity
   has_one :transport_company
 end
