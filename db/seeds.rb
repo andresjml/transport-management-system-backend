@@ -6,12 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts('Seeding')
-Route.destroy_all
-Client.destroy_all
-Order.destroy_all
-TransportCompany.destroy_all
-Vehicle.destroy_all
 Trip.destroy_all
+Order.destroy_all
+Client.destroy_all
+Route.destroy_all
+Vehicle.destroy_all
+TransportCompany.destroy_all
+
+
 
 10.times do
     Route.create(name:Faker::Address.community)
@@ -30,7 +32,7 @@ end
 end
 
 30.times do
-    Vehicle.create(type:"53 ft trailer w/tractor", capacity:13500, transport_company_id:(1..10).to_a.sample)
+    Vehicle.create(v_type:"53 ft trailer w/tractor", capacity:13500, transport_company_id:(1..10).to_a.sample)
 end
 
 5.times do
