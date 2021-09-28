@@ -1,7 +1,7 @@
 class TripsController < ApplicationController
 
     def index
-        trips = Trips.all
+        trips = Trip.all
         render json: trips
     end
 end
