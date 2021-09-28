@@ -30,7 +30,7 @@ end
 end
 
 30.times do
-    Vehicle.create(type:'53 ft trailer w/tractor', capacity:13500, transport_company_id:(1..10).to_a.sample)
+    Vehicle.create(type:"53 ft trailer w/tractor", capacity:13500, transport_company_id:(1..10).to_a.sample)
 end
 
 5.times do
