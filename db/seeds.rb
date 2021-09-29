@@ -24,7 +24,7 @@ end
 end
 
 200.times do
-    Order.create(volume:(1..13500).to_a.sample, client_id:(1..60).to_a.sample)
+    Order.create(volume:(10000..13500).to_a.sample, client_id:(1..60).to_a.sample)
 end
 
 10.times do
