@@ -1,4 +1,5 @@
 class ClientSerializer < ActiveModel::Serializer
-  attributes :id, :name, :address
-  has_one :route
+  attributes :id, :name, :address, :route
+  #has_one :route
+  
 end
