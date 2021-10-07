@@ -35,8 +35,6 @@ end
     Vehicle.create(v_type:"53 ft trailer w/tractor", capacity:13500, transport_company_id:(1..10).to_a.sample, assigned:false)
 end
 
-5.times do
-    Trip.create(vehicle_id:(1..30).to_a.sample, order_id:(1..200).to_a.sample, status:false)
-end
+
 
 puts('Seeding completed!!')
