@@ -2,7 +2,7 @@ class VehiclesController < ApplicationController
 
     def index
         vehicles = Vehicle.all
-        render json: vehicles
+        render json: vehicles.order(id: :desc)
     end
 
     def show

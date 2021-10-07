@@ -2,7 +2,7 @@ class RoutesController < ApplicationController
 
     def index
         routes = Route.all
-        render json: routes
+        render json: routes.order(id: :desc)
     end
 
     def show
