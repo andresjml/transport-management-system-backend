@@ -2,7 +2,7 @@ class ClientsController < ApplicationController
     
   def index
     clients = Client.all
-    render json: clients.order(id: :desc)
+    render json: clients.order(id: :asc)
   end
 
   def show

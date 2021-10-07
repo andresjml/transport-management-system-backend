@@ -2,7 +2,7 @@ class TransportCompaniesController < ApplicationController
 
     def index
         transport_companies = TransportCompany.all
-        render json: transport_companies.order(id: :desc)
+        render json: transport_companies.order(id: :asc)
     end
 
     def show
